@@ -1,3 +1,8 @@
-body{
-    background: dodgerblue;
+/*Variables*/
+:root{
+    --color-primary:#2584ff;
+    --color-secondary:#00daff;
+    --color-secondary:#ff3400;
+    --color-headings:#1b0760;
+    --color-body:#918ca4;
 }
