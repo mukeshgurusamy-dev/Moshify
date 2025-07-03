@@ -2,10 +2,11 @@
 :root{
     --color-primary:#2584ff;
     --color-secondary:#00daff;
-    --color-secondary:#ff3400;
+    --color-accent:#ff3400;
     --color-headings:#1b0760;
     --color-body:#918ca4;
 }
+/*Typography*/
 html{
     font-size: 62.5%;/*which means 10px*/
 }
@@ -32,7 +33,6 @@ h3{
 p{
     margin-top:0;
 }
-/*For Desktop*/
 @media screen and (min-width:1024px) {
     body{
         font-size: 1.8rem;
@@ -45,5 +45,28 @@ p{
     }
     h3{
         font-size:2.4rem;
+    }
+}
+/*for ArrowLink*/
+a{
+    text-decoration: none;
+}
+.arrow-link{
+    color:var(--color-accent);
+    text-transform: uppercase;
+    font-size:2rem;
+    font-weight: bold;
+}
+.arrow-link::after{
+    content:'-->';
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+.arrow-link:hover::after{
+    margin-left: 10px;
+}
+@media screen and (min-width:1024px) {
+    .arrow-link{
+        font-size:1.5rem;
     }
 }
