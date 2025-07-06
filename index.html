@@ -15,18 +15,27 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
-    <div class="input-group">
-      <span class="icon-container">
-        <svg class="icon icon--primary">
-          <use xlink:href="images/sprite.svg#clock"></use>
-        </svg>
-      </span>
-      <input
-        type="text"
-        class="input"
-        placeholder="enter domain name here..."
-      />
-      <button class="btn btn--accent">Search</button>
+    <div style="width: 50%; padding: 2rem">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Basic</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge-small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Get started</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
