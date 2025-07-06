@@ -325,6 +325,23 @@ a{
     top:-6px;
     right:5%;
 }
+/*Mediacomponent*/
+/*for Mediacomponent*/
+.media{
+    display:flex;
+}
+/*for Mediabodycomponent*/
+.media__body{
+    margin:0 2rem;/*(or)padding:0 2rem;*/
+}
+/*for Mediatitlecomponent*/
+.media__title{
+    margin-top:0;
+}
+/*for Mediaimagecomponent*/
+.media__image{
+    margin-top:1rem;
+}
 
 
 
