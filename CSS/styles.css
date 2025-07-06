@@ -124,7 +124,9 @@ a{
 /*for VerticalList and listitem*/
 .list--tick{
     list-style-image: url(../images/tick.svg);
-    padding:3rem;
+    padding-left:3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .list--tick .list__item{
     padding-left: 0.5rem;
@@ -133,6 +135,10 @@ a{
 @media screen and (min-width:1024px) {
     .list--tick .list__item{
         padding-left: 0;
+    }
+    .list--tick{
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
     }
 }
 /*Icons*/
@@ -305,4 +311,20 @@ a{
         font-sizE:1.7rem;
     }
 }
+/*Popularbadge*/
+/*header(parent) should be relative because popular-badge(child) is absolutely positioned*/
+.plan--popular .card__header{
+    position: relative;
+}
+/*adding popular badge component on header*/
+.plan--popular .card__header::before{
+    content: url(../images/popular.svg);
+    display:inline-block;
+    width:40px;
+    position:absolute;
+    top:-6px;
+    right:5%;
+}
+
+
 
