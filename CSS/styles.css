@@ -384,6 +384,21 @@ a{
         font-size: 1.6rem;
     }
 }
-
+/*Grids*/
+.grid{
+    display:grid;
+}
+/*for tablet and wider screens*/
+@media screen and (min-width:728px) {
+    .grid--1x2{
+    grid-template-columns: 1fr 1fr;/*or repeat(2,1fr);*/
+}
+}
+/*for Desktop and wider screens*/
+@media screen and (min-width:1024px) {
+    .grid--1x3{
+    grid-template-columns: 1fr 1fr 1fr;/*repeat(3,1fr);*/
+    }
+}
 
 
