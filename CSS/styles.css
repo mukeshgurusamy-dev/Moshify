@@ -184,7 +184,7 @@ a{
     border:0;
     cursor: pointer;
     border-radius: 40px;
-    white-space: no-wrap;
+    white-space:nowrap;
     text-align: center;
     margin:1rem 0;
 }
@@ -204,6 +204,10 @@ a{
 .btn--secondary{
     background-color: var(--color-secondary); 
     color:#fff;
+}
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 .btn--secondary:hover{
     background-color: #00c8eb;
@@ -411,6 +415,7 @@ a{
     }
 }
 /*Testimonial*/
+/*for card*/
 .testimonial{
     padding:3rem;
 }
@@ -424,6 +429,7 @@ a{
 .testimonial__image{
     position: relative;
 }
+/*for icon position on topright corner of the image*/
 .testimonial__image > .icon-container{
     position: absolute;
     top:3rem;
@@ -453,6 +459,44 @@ a{
         margin-right: 4rem;
     }
 }*/
+
+/*Callout*/
+/*Callout container structure*/
+.callout{
+    padding:4rem;
+    border-radius:5px;
+}
+/*callout container skin*/
+.callout--primary{
+    background: var(--color-primary);
+}
+.callout__heading{
+    font-size:3rem;
+    color:#fff;
+    margin-top: 0;
+}
+.callout__content{
+    text-align: center;
+    color:#fff;
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+@media screen and (min-width:728px) {
+    .callout .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin:0 2rem;
+    }
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+}
+
 
 
 
