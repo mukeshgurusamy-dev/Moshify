@@ -148,11 +148,18 @@ a{
     width:40px;
     height:40px;
 }
+.icon--small{
+    width:30px;
+    height:30px;
+}
 /*Skin for icon*/
 .icon--primary{
     fill:var(--color-primary);
 }
 .icon--secondary{
+    fill:#FFF;
+}
+.icon--white{
     fill:#FFF;
 }
 .icon-container{
@@ -163,6 +170,9 @@ a{
     display:inline-flex;
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent{
+    background: var(--color-accent);
 }
 /*Buttons*/
 /*Default styles for allbuttons*/
@@ -392,7 +402,7 @@ a{
 @media screen and (min-width:728px) {
     .grid--1x2{
     grid-template-columns: 1fr 1fr;/*or repeat(2,1fr);*/
-}
+    }
 }
 /*for Desktop and wider screens*/
 @media screen and (min-width:1024px) {
@@ -400,5 +410,45 @@ a{
     grid-template-columns: 1fr 1fr 1fr;/*repeat(3,1fr);*/
     }
 }
+/*Testimonial*/
+.testimonial{
+    padding:3rem;
+}
+/*slightly change*/
+/*.grid{
+    margin:1rem;
+}*/
+.testimonial__image > img{
+    width:100%;
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > .icon-container{
+    position: absolute;
+    top:3rem;
+    right:-32px;
+}
+@media screen and (min-width:728px) {
+    .testimonial .quote,
+    .testimonial .quote__title{
+        font-size: 2.4rem;
+    }
+    .testimonial .quote{
+        margin-left:6rem;
+    }
+    .testimonial{
+        padding:3rem;/*slight change*/
+    }
+}
+
+
+/*for special screen size on 300 to 390px*/
+/*@media screen and (min-width:360px) and (max-width:390px) {
+    .testimonial__image{
+        margin-right: 6rem;
+    }
+
+}*/
 
 
