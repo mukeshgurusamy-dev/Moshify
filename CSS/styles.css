@@ -496,6 +496,38 @@ a{
         grid-template-columns: 1fr auto;
     }
 }
+/*Collapsible*/
+/*for collapsible header*/
+.collapsible__header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*for collapsible heading*/
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+}
+/*transformation of collapsible icon to right by default*/
+.collapsible .collapsible__chevron{
+    transform:rotate(-90deg);
+    transition:transform .3s;
+}
+/*hiding collapsible content*/
+.collapsible .collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__chevron{
+    transform:rotate(0);
+}
+/*showing collapsible content*/
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+}
 
 
 
