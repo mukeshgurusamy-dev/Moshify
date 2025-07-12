@@ -15,44 +15,23 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
-    <!--for block with no-background-->
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Get Started</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, autem!
-        </p>
-      </header>
-    </section>
-
-    <!--for block with background-color-->
-    <section class="block block--dark">
-      <header class="block__header">
-        <h2 class="block__heading">Get Started</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, autem!
-        </p>
-      </header>
-    </section>
-
-    <!--for block with background-color and skewed-right-->
-    <section class="block block--dark block--skewed-right">
-      <header class="block__header">
-        <h2 class="block__heading">Get Started</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, autem!
-        </p>
-      </header>
-    </section>
-
-    <!--for block with background-color skewed-left-->
-    <section class="block block--dark block--skewed-left">
-      <header class="block__header">
-        <h2 class="block__heading">Get Started</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, autem!
-        </p>
-      </header>
-    </section>
+    <nav class="nav collapsible">
+      <!--forlogo-->
+      <a class="nav__brand" href="/"
+        ><img src="images/logo.svg" alt="Brand logo"
+      /></a>
+      <!--for toggler-icon-->
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <!--navigation-items-->
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPN</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="js/main.js"></script>
   </body>
 </html>

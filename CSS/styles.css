@@ -569,5 +569,80 @@ a{
     max-width:1140px;
     margin:3rem auto;
 }
+/*NavigationBar*/
+/*for navigation*/
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    flex-wrap: wrap;
+    padding:0 1rem;
+}
+/*for navlist*/
+.nav__list{
+    width:100%;
+    margin:0;
+}
+/*for navitems*/
+.nav__item{
+    padding:0.5rem 2rem;
+    border-bottom:1px solid #222;
+    /*cursor:pointer;*/
+}
+/*for nav-item color*/
+.nav__item > a{
+    color:#d2d0db;
+    transition: color .3s;
+    cursor:pointer;
+}
+.nav__item > a:hover{
+    color:#FFF;
+}
+/*nav-item changed when we hover on nav-item section*/
+/*.nav__item:hover > a{
+    color:#fff;
+    cursor:pointer;
+}*/
+/*for nav-toggler*/
+.nav__toggler{
+    opacity:0.5;
+    transition: box-shadow .15s;
+    cursor:pointer;
+}
+/*for nav-toogler effect when its expands*/
+.nav.collapsible--expanded .nav__toggler{
+    opacity:1;
+    box-shadow:0 0 0 5px #666;
+    border-radius: 5px;
+}
+/*for nav-logo to aligned center*/
+.nav__brand{
+    transform:translateY(5px);
+}
+@media screen and (min-width:728px) {
+    /*disabling navigation toggler for 768px and widerscreens*/
+    .nav__toggler{
+        display:none;
+    }
+    /*for navigation list occupy width based on content and display in horizontal*/
+    .nav__list{
+        width:auto;
+        display: flex;
+        flex-direction: row;
+        font-size:1.6rem;
+    }
+    /*no need for borderbottom*/
+    .nav__item{
+        border:0;
+    }
+    /*for always visible of nav-items*/
+    .nav__list.collapsible__content{
+        max-height: 100%;
+        opacity: 1;
+    }
+
+}
 
 
