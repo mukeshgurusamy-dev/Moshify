@@ -156,6 +156,7 @@ a{
 .icon--white{
     fill:#FFF;
 }
+/*for icon-container*/
 .icon-container{
     background-color:#f3f9fa;
     width:64px;
@@ -171,16 +172,16 @@ a{
 /*Buttons*/
 /*Default styles for allbuttons*/
 .btn{
-    font-size:1.8rem;
-    font-weight: bold;
-    padding: 2rem 3rem;
-    text-transform: uppercase;
+    border-radius: 40px;
     border:0;
     cursor: pointer;
-    border-radius: 40px;
-    white-space:nowrap;
-    text-align: center;
+    font-size:1.8rem;
+    font-weight: 600;
     margin:1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space:nowrap;
 }
 /*For block button structure*/
 .btn--block{
@@ -199,12 +200,12 @@ a{
     background-color: var(--color-secondary); 
     color:#fff;
 }
+.btn--secondary:hover{
+    background-color: #00c8eb;
+}
 .btn--stretched{
     padding-left: 6rem;
     padding-right: 6rem;
-}
-.btn--secondary:hover{
-    background-color: #00c8eb;
 }
 .btn--outline{
     background-color: #FFF;
