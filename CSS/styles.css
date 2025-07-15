@@ -99,7 +99,7 @@ a{
     color:#FFF;
 }
 /*for SmallBadge*/
-.badge-small{
+.badge--small{
     font-size: 1.6rem;
     padding:0.5rem 1.5rem;
 }
@@ -107,7 +107,7 @@ a{
     .badge{
         font-size: 1.5rem;
     }
-    .badge-small{
+    .badge--small{
         font-size: 1.2rem;
     }
 }
