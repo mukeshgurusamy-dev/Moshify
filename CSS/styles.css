@@ -84,7 +84,7 @@ a{
 /*badge represent BigBadge*/
 .badge{
     border-radius:20px;
-    padding:0.5rem 1rem;
+    padding:0.5rem 2rem;
     font-size: 2rem;
     font-weight: 600;
     white-space: no-wrap;
@@ -101,7 +101,6 @@ a{
 /*for SmallBadge*/
 .badge--small{
     font-size: 1.6rem;
-    padding:0.5rem 1.5rem;
 }
 @media screen and (min-width:1024px) {
     .badge{
