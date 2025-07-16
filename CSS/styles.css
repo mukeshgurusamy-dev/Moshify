@@ -273,11 +273,12 @@ a{
 .card__header,.card__body{
     padding:2rem 3rem;
 }
-/*for cardheader skins*/
+/*for primary-card cardheader skin*/
 .card--primary .card__header{
     background-color: var(--color-primary);
     color:#FFF;
 }
+/*for secondary-card cardheader skin*/
 .card--secondary .card__header{
     background-color: var(--color-secondary);
     color:#FFF;
