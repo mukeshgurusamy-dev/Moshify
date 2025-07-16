@@ -101,6 +101,7 @@ a{
 /*for SmallBadge*/
 .badge--small{
     font-size: 1.6rem;
+    padding:0.5rem 1.5rem;
 }
 @media screen and (min-width:1024px) {
     .badge{
@@ -283,6 +284,10 @@ a{
     background-color: var(--color-secondary);
     color:#FFF;
 }
+/*for secondary-card secondary-badge*/
+.card--secondary .badge--secondary{
+    background-color: #02cdf1;
+}
 /*plans*/
 .plan__name{
     font-size:2.4rem;
@@ -290,7 +295,6 @@ a{
     color:#FFF;
     margin:0;
 }
-
 .plan__price{
     font-size:6rem;
 }
@@ -306,16 +310,14 @@ a{
     letter-spacing:1px;
     font-weight:300;
 }
-.card--secondary .badge--secondary{
-    background-color: #02cdf1;
-}
+/*for plancomponent listitems*/
 .plan .list__item{
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
 @media screen and (min-width:1024px) {
     .plan__name{
-        font-size:1.8rem;
+        font-size:1.4rem;
     }
     .plan__price{
         font-size: 5rem;
