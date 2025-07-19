@@ -603,7 +603,7 @@ a{
 .nav__item > a:hover{
     color:#FFF;
 }
-/*nav-item changed when we hover on nav-item section*/
+/*nav-item changed when we hover on nav__item section*/
 /*.nav__item:hover > a{
     color:#fff;
     cursor:pointer;
@@ -640,7 +640,7 @@ a{
     .nav__item{
         border:0;
     }
-    /*for always visible of nav-items*/
+    /*for always visible of nav__items*/
     .nav__list.collapsible__content{
         max-height: 100%;
         opacity: 1;
