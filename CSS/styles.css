@@ -423,9 +423,9 @@ a{
     padding:3rem;
 }
 /*slightly change*/
-/*.grid{
+.grid{
     margin:1rem;
-}*/
+}
 .testimonial__image > img{
     width:100%;
 }
@@ -446,9 +446,9 @@ a{
     .testimonial .quote{
         margin-left:6rem;
     }
-    /*.testimonial{*/
-        /*padding:3rem;slight change*/
-    /*}*/
+    /*.testimonial{
+        padding:3rem;slightly-change
+    }*/
     
 }
 /*slight change*/
