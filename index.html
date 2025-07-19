@@ -15,43 +15,22 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body style="padding: 2rem">
-    <div class="card testimonial">
-      <div class="grid grid--1x2">
-        <!--Image-component-->
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy,smiling customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <!--QuoteComponent-->
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maxime
-            non aut nihil esse autem aliquid ea? Recusandae numquam expedita
-            repellat omnis veniam sapiente Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Rem maxime non aut nihil esse autem
-            aliquid ea.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__title">John-Lumeo</h3>
-                <p class="media__content quote__organization">
-                  Mosh company ceo
-                </p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
+    <!--Structure of collapsible component not skin-->
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Products</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/chevron.svg"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          porro temporibus beatae aperiam aspernatur harum culpa earum facere
+          reprehenderit. Similique!
+        </p>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
