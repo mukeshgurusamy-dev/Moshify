@@ -656,11 +656,13 @@ a{
 .hero__image{
     width:100%;
 }
-.hero{
+/*to override the clip-path in skewed-left blocks*/
+.block--skewed-left.hero{
     clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
 }
-.hero__content{
-
+/*to override the clip-path in skewed-right blocks*/
+.block--skewed-right.hero{
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 90%);
 }
 @media screen and (min-width:768px) {
     .hero{
