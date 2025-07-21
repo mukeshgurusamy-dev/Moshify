@@ -274,7 +274,7 @@ a{
 /*Default card structure*/
 .card{
     border-radius:7px;
-    box-shadow:0 0 30px 20px #f3f3f3; 
+    box-shadow:0 0 30px 10px #f3f3f3; 
     overflow:hidden;
 }
 /*card header,card body structure*/
@@ -291,11 +291,18 @@ a{
     background-color: var(--color-secondary);
     color:#FFF;
 }
+/*for primary-card primary-badge*/
+.card--primary .badge--primary{
+    background-color: #126de4;
+}
 /*for secondary-card secondary-badge*/
 .card--secondary .badge--secondary{
     background-color: #02cdf1;
 }
 /*plans*/
+.plan{
+    transition: transform .3s ease-out;
+}
 .plan__name{
     font-size:2.4rem;
     font-weight: 500;
@@ -317,10 +324,19 @@ a{
     letter-spacing:1px;
     font-weight:300;
 }
+.plan--popular{
+    transform:scale(1.1);/*10% larger*/
+}
 /*for plancomponent listitems*/
 .plan .list__item{
     letter-spacing: 1px;
     margin-bottom: 2rem;
+}
+.plan:hover{
+    transform:scale(1.05);
+}
+.plan--popular:hover{
+    transform:scale(1.15);
 }
 @media screen and (min-width:1024px) {
     .plan__name{
@@ -700,5 +716,15 @@ a{
     .block-domain__prices{
         grid-template-columns: repeat(auto-fit,minmax(100px/*(or) 10rem*/,1fr));/*repeat(6,1fr);*/
     }
+}
+/*plan-block*/
+/*applying gap to grid*/
+.block-plans .grid{
+    gap:8rem 4rem;
+}
+/*applying max-width to card and center aligned*/
+.block-plans .card{
+    max-width: 500px;
+    margin:0 auto;
 }
 
