@@ -727,4 +727,26 @@ a{
     max-width: 500px;
     margin:0 auto;
 }
+/*feature*/
+.feature .feature__image{
+    width:100%;
+}
+.feature .feature__heading{
+    margin:1rem 0;
+}
+/*for feature component*/
+.feature{
+    gap:4rem 2rem;
+    margin:12rem 0;
+}
+/*targeting first occurence of feature class*/
+.feature:first-of-type{
+    margin-top:6rem;
+}
+@media screen and (min-width:768px) {
+    /*targeting all evens feature(feature__content) in feature class*/ 
+    .feature:nth-of-type(even) .feature__content{
+        order:2;
+    }
+}
 
