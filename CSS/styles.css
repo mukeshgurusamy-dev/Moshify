@@ -29,6 +29,7 @@ h2,
 h3 {
   margin-bottom: 1rem;
   line-height: 1.1;
+  color: var(--color-headings);
 }
 h1 {
   font-size: 7rem;
@@ -383,7 +384,6 @@ a {
 /*for Mediatitlecomponent*/
 .media__title {
   margin-top: 0;
-  color: #fff;
 }
 /*for Mediaimagecomponent*/
 .media__image {
@@ -480,16 +480,16 @@ a {
     }*/
 }
 /*slight change*/
-/*@media screen and (min-width:360px) and (max-width:390px) {
-    .testimonial__image{
-        margin-right: 6.5rem;
-    }
+@media screen and (min-width: 360px) and (max-width: 390px) {
+  .testimonial__image {
+    margin-right: 6.5rem;
+  }
 }
-@media screen and (min-width:400px) and (max-width:430px) {
-    .testimonial__image{
-        margin-right: 4rem;
-    }
-}*/
+@media screen and (min-width: 400px) and (max-width: 430px) {
+  .testimonial__image {
+    margin-right: 4rem;
+  }
+}
 
 /*Callout*/
 /*Callout container structure*/
@@ -578,6 +578,11 @@ a {
 .block--dark .block__heading {
   color: #fff;
 }
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
 /*for skewed-right blocks*/
 .block--skewed-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
@@ -593,12 +598,9 @@ a {
   text-align: center;
   max-width: 1140px;
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
-.block__header h1,
-.block__header h2,
-.block__header h3 {
-  color: #fff;
-}
+
 /*container component*/
 .container {
   max-width: 1140px;
