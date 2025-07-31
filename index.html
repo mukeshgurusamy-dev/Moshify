@@ -15,58 +15,85 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
-    <section class="block">
-      <header class="block__header">
-        <h2>What our Customers are Saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          minima similique nulla!
-        </p>
-      </header>
-      <!--to constrain the content-->
-      <div class="container">
-        <div class="card testimonial">
-          <div class="grid grid--1x2">
-            <!--Image-component-->
-            <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy,smiling customer"
-              />
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--white icon--small">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <!--QuoteComponent-->
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                maxime non aut nihil esse autem aliquid ea? Recusandae numquam
-                expedita repellat omnis veniam sapiente Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Rem maxime non aut nihil
-                esse autem aliquid ea.
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__title">John-Lumeo</h3>
-                    <p class="media__content quote__organization">
-                      Mosh company ceo
-                    </p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <!--footercomponent-->
+    <!--Structure of collapsible component not skin-->
+    <div class="footer block--dark">
+      <!--Grid for footer-->
+      <div class="grid grid5x1 grid1x5 container">
+        <div class="collapsible collapsible--expanded">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">PRODUCTS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/chevron.svg"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list collapsible__items">
+              <li>
+                <a href="https://www.codewithmosh.com">Website Hosting</a>
+              </li>
+              <li>Free Automated</li>
+              <li>Migrations</li>
+              <li>Wordpress</li>
+            </ul>
           </div>
         </div>
+        <div class="collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">COMPANY</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/chevron.svg"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list collapsible__items">
+              <li>About</li>
+              <li>Affiliates</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">SUPPORT</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/chevron.svg"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list collapsible__items">
+              <li>Contact</li>
+              <li>Knowledge Base</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading">DOMAINS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/chevron.svg"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list collapsible__items">
+              <li>Domain Checker</li>
+              <li>Domain Transfer</li>
+              <li>Free Domain</li>
+            </ul>
+          </div>
+        </div>
+        <!--footer->footer-->
+        <!--1st Way-->
+        <div class="footer__bottom">
+          <!--forlogo-->
+          <a class="nav__brand" href="/"
+            ><img src="images/logo.svg" alt="Brand logo"
+          /></a>
+          <span class="owner">Copyright &copy; 2020 Mosh Homedani</span>
+        </div>
       </div>
-    </section>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
