@@ -16,84 +16,83 @@
   </head>
   <body>
     <!--footercomponent-->
-    <!--Structure of collapsible component not skin-->
-    <div class="footer block--dark">
-      <!--Grid for footer-->
-      <div class="grid grid5x1 grid1x5 container">
-        <div class="collapsible collapsible--expanded">
+    <section class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <!--Structure of collapsible component not skin-->
+        <!--first section-->
+        <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading">PRODUCTS</h2>
+            <h2 class="collapsible__heading footer__heading">products</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/chevron.svg"></use>
             </svg>
           </header>
           <div class="collapsible__content">
-            <ul class="list collapsible__items">
+            <ul class="list">
               <li>
-                <a href="https://www.codewithmosh.com">Website Hosting</a>
+                <a href="#">Website Hosting</a>
               </li>
-              <li>Free Automated</li>
-              <li>Migrations</li>
-              <li>Wordpress</li>
+              <li><a href="#">Free Automated</a></li>
+              <li><a href="#">Migration</a></li>
+              <li><a href="#">Wordpress</a></li>
             </ul>
           </div>
-        </div>
-        <div class="collapsible">
+        </section>
+        <!--second section-->
+        <section class="collapsible footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading">COMPANY</h2>
+            <h2 class="collapsible__heading footer__heading">company</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/chevron.svg"></use>
             </svg>
           </header>
           <div class="collapsible__content">
-            <ul class="list collapsible__items">
-              <li>About</li>
-              <li>Affiliates</li>
-              <li>Blog</li>
+            <ul class="list">
+              <li><a href="">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
           </div>
-        </div>
-        <div class="collapsible">
+        </section>
+        <!--third section-->
+        <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading">SUPPORT</h2>
+            <h2 class="collapsible__heading footer__heading">supports</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/chevron.svg"></use>
             </svg>
           </header>
           <div class="collapsible__content">
-            <ul class="list collapsible__items">
-              <li>Contact</li>
-              <li>Knowledge Base</li>
-              <li>FAQ</li>
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
           </div>
-        </div>
-        <div class="collapsible">
+        </section>
+        <!--fourth section-->
+        <section class="collapsible footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading">DOMAINS</h2>
+            <h2 class="collapsible__heading footer__heading">domains</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/chevron.svg"></use>
             </svg>
           </header>
           <div class="collapsible__content">
-            <ul class="list collapsible__items">
-              <li>Domain Checker</li>
-              <li>Domain Transfer</li>
-              <li>Free Domain</li>
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
             </ul>
           </div>
-        </div>
-        <!--footer->footer-->
-        <!--1st Way-->
-        <div class="footer__bottom">
-          <!--forlogo-->
-          <a class="nav__brand" href="/"
-            ><img src="images/logo.svg" alt="Brand logo"
-          /></a>
-          <span class="owner">Copyright &copy; 2020 Mosh Homedani</span>
+        </section>
+        <!--Brandlogo-->
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="The brand logo" />
+          <p class="footer__copyright">Copyright &copy; 2020 Mosh Homedani</p>
         </div>
       </div>
-    </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
