@@ -22,7 +22,7 @@ body {
   font-family: "Inter", Arial, Halvetica, sans-serif;
   line-height: 1.5;
   color: var(--color-body);
-  font-size: 2.4rem;
+  font-size: 2.4rem; /*before 2.4rem*/
 }
 h1,
 h2,
@@ -253,7 +253,6 @@ a {
 /*for input placeholder*/
 ::placeholder {
   color: #cdcbd7;
-  text-transform: capitalize;
 }
 @media screen and (min-width: 1024px) {
   .input {
@@ -269,7 +268,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem; /*default 2rem*/
   width: 0;
 }
 .input-group .btn {
@@ -569,9 +568,8 @@ a {
 /*Blocks*/
 /*for block style*/
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 4rem;
-  margin-bottom: 3rem;
+  --padding-vertical: 5rem; /* by default 6rem*/
+  padding: var(--padding-vertical) 2rem; /*horizontal padding 4rem*/
 }
 /*for block with backgroundcolor*/
 .block--dark {
@@ -700,11 +698,11 @@ a {
 }
 /*to override the clip-path in skewed-left blocks*/
 .block--skewed-left.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 /*to override the clip-path in skewed-right blocks*/
 .block--skewed-right.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -722,24 +720,40 @@ a {
   margin: 4rem auto;
   max-width: 670px;
 }
-/*for change*/
 .block-domain__prices {
   font-size: 2rem;
   font-weight: 600;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /*for change 3*/
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-headings);
 }
+/*for change*/
+/*@media screen and (max-width: 350px) {
+  .input-group .btn {
+    padding: 1.2rem 2.5vh;
+  }
+  ::placeholder {
+    font-size: 1.3rem;
+  }
+  .input-group .input {
+    padding: 1.5rem 1.5rem;
+  }
+}*/
 /*for change*/
 /*@media screen and (max-width: 400px) {
   .block-domain__prices {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 6rem);
-    justify-content: center;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+  .input-group .btn {
+    padding: 1.6rem 3.5vh;
+    font-size: 1.5rem;
   }
 }*/
 @media screen and (min-width: 768px) {
@@ -750,6 +764,12 @@ a {
     ); /*repeat(6,1fr);*/
   }
 }
+/*for change*/
+/*@media screen and (min-width: 2000px) {
+  .input-group .btn {
+    padding: 2rem 3vw;
+  }
+}*/
 /*plan-block*/
 /*applying gap to grid*/
 .block-plans .grid {
