@@ -184,7 +184,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw; /*horizontal padding is based on viewport width if viewport increases horizontal padding also increases*/
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -270,6 +270,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -603,15 +604,15 @@ a {
 /*for blockheader*/
 .block__header {
   text-align: center;
-  max-width: 1140px;
-  margin: 0 auto;
+  /*max-width: 1140px;
+  margin: 0 auto;*/
   margin-bottom: 4rem;
 }
 
 /*container component*/
 .container {
   max-width: 1140px;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 /*NavigationBar*/
 /*for navigation*/
@@ -721,16 +722,26 @@ a {
   margin: 4rem auto;
   max-width: 670px;
 }
+/*for change*/
 .block-domain__prices {
   font-size: 2rem;
   font-weight: 600;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
 }
+/*for change*/
+/*@media screen and (max-width: 400px) {
+  .block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+  }
+}*/
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(
