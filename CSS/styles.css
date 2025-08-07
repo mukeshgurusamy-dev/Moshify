@@ -1,3 +1,10 @@
+/*Note!*/
+/* //-> means My code recomendations i haven't add it for clean and clarity....*/
+/*Mainly is for our websites to look good on oldphone likes Iphone SE,Iphone 3 etc and some olddevices*/
+/*But still this website looks good on old devices but commented code will increase efficiency more*/
+/*Actually this code is enough almost this code will cover almost 99% of devices but if any device
+,if anyone face any minor issue uncomment the code and try it*/
+
 /*Variables*/
 :root {
   --color-primary: #2584ff;
@@ -574,7 +581,8 @@ a {
 /*for block with backgroundcolor*/
 .block--dark {
   background-color: #000;
-  padding: 0.5rem; /*for change*/
+  /*to override the padding we created in block class*/
+  padding: 0.5rem;
 }
 /*for block-heading*/
 .block__heading {
@@ -724,14 +732,20 @@ a {
   font-size: 2rem;
   font-weight: 600;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /*for change 3*/
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /*//->We can use coulums 3 for better occupying viewport width of devices
+  but In conern of (old-device) with lesser screen width like iphoneSE So we use 2
+  and for rows if we use three column use 2rows.
+   ofcourse we can right mediaQueries but I Think this is bettersolution*/
+  grid-template-rows: repeat(3, 6rem);
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
   color: var(--color-headings);
 }
-/*for change*/
+/*//->for old devices like iphone-3 etc..*/
 /*@media screen and (max-width: 350px) {
   .input-group .btn {
     padding: 1.2rem 2.5vh;
@@ -743,7 +757,7 @@ a {
     padding: 1.5rem 1.5rem;
   }
 }*/
-/*for change*/
+/*//->for old devices like iphone4 etc...*/
 /*@media screen and (max-width: 400px) {
   .block-domain__prices {
     grid-template-columns: repeat(2, 1fr);
@@ -764,7 +778,7 @@ a {
     ); /*repeat(6,1fr);*/
   }
 }
-/*for change*/
+/*//->for 4kscreens and wider screens*/
 /*@media screen and (min-width: 2000px) {
   .input-group .btn {
     padding: 2rem 3vw;
@@ -850,18 +864,26 @@ a {
   color: #fff;
   opacity: 0.3;
 }
-/*for change*/
-/*.footer li:hover {
+/*If we hover near items in footbar we get our cursor as pointer but,
+to redirect we have to click on text*/
+/*//->.footer li:hover {
   cursor: pointer;
 }*/
-/*to get rid default color that browser apply to anchor element*/
+/*to get rid of default color that browser apply to anchor element*/
 .footer a {
   color: #777;
   transition: color 0.3s;
 }
-/*for change*/
-/*.footer li:hover > a {
+/*//->color to be changed on item when we hover near items in footer*/
+.footer li:hover > a {
   color: #fff;
+}
+/*since we have list items in navigation bar and also footer on block--dark,
+then we apply general rule to avoid repetion,
+ if we apply general rule remove hover effect in navigation bar and also footer component*/
+/*.list > li:hover > a {
+  color: #fff;
+  cursor: pointer;
 }*/
 .footer a:hover {
   color: #fff;
@@ -905,5 +927,12 @@ a {
   }
   .footer__heading {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 825px) {
+  /*//->we get breakpoint on footer items for specific devices with screen size of,
+  somewhere around 768px to 825px*/
+  .footer__section .list > li {
+    font-size: 2.2rem;
   }
 }

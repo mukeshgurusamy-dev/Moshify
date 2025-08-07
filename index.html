@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--for validation-->
 <html lang="zxx">
+  <!--Because we use lorem ipsum.. as a content most of the times we use zxx-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +38,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!--to render samely across allbrowsers-->
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <!--for AOS(animation on scroll) animation-->
@@ -211,7 +212,7 @@
           </p>
           <a href="#" class="arrow-link">Learn More</a>
         </div>
-        <picture data-aos="fade-left">
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/easy@1x.webp 1x, images/easy@2x.webp 2x"
@@ -265,7 +266,7 @@
           </p>
           <a href="#" class="arrow-link">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x"
@@ -329,7 +330,7 @@
         <ul class="list" data-aos="zoom-in-up">
           <!--each listitem have one mediaobject-->
           <li>
-            <div class="media">
+            <div class="media" data-aos="fade-up">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#snap"></use>
@@ -346,7 +347,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="fade-up">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#growth"></use>
@@ -363,7 +364,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="fade-up">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#clock"></use>
@@ -392,10 +393,10 @@
       </p>
     </header>
     <!--testimonial component-->
-    <div class="card testimonial container" data-aos="fade-up">
+    <div class="card testimonial container">
       <div class="grid grid--1x2">
         <!--Image-component-->
-        <div class="testimonial__image">
+        <div class="testimonial__image" data-aos="fade-right">
           <img src="images/testimonial.jpg" alt="A happy,smiling customer" />
           <span class="icon-container icon-container--accent">
             <svg class="icon icon--white icon--small">
@@ -404,7 +405,7 @@
           </span>
         </div>
         <!--QuoteComponent-->
-        <blockquote class="quote">
+        <blockquote class="quote" data-aos="zoom-in">
           <p class="quote__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maxime
             non aut nihil esse autem aliquid ea? Recusandae numquam expedita
@@ -444,7 +445,6 @@
         <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
       </div>
     </div>
-    <!--footer component-->
     <!--footercomponent-->
     <div class="block block--dark footer">
       <div class="container grid footer__sections">
