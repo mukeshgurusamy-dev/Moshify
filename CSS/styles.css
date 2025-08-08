@@ -5,6 +5,10 @@
 /*Actually this code is enough almost this code will cover almost 99% of devices but if any device
 ,if anyone face any minor issue uncomment the code and try it*/
 
+/*Some coderecommendation are uncommented because without that layout may not,
+good on somedevices so layout breaks,even mosh made some loopholes intentionally or not,
+I dont know But we have to make some changes*/
+
 /*Variables*/
 :root {
   --color-primary: #2584ff;
@@ -336,8 +340,9 @@ a {
   letter-spacing: 1px;
   font-weight: 300;
 }
+/* //->slight change*/
 .plan--popular {
-  transform: scale(1.1); /*10% larger*/
+  transform: scale(1.04); /*original value is 1.1*/ /*10% larger*/
 }
 /*for plancomponent listitems*/
 .plan .list__item {
@@ -345,10 +350,21 @@ a {
   margin-bottom: 2rem;
 }
 .plan:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
+/* //->slight change*/
 .plan--popular:hover {
-  transform: scale(1.15);
+  transform: scale(1.07); /*original value is 1.15*/
+}
+@media screen and (min-width: 768px) {
+  /* //->slight change*/
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  /*//->slight change*/
+  .plan--popular:hover {
+    transform: scale(1.13);
+  }
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
