@@ -6,10 +6,12 @@
     "dev": "parcel src/index.html --public-url ./",
     "build": "parcel build src/index.html --public-url ./"
   },
-  "Keywords": [],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.15.4"
+    "cssnano": "^7.1.0",
+    "parcel": "^2.15.4",
+    "postcss": "^8.5.6"
   }
 }
