@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel src/index.html --public-url ./",
-    "build": "parcel build src/index.html --public-url ./"
+    "build": "parcel build src/index.html --public-url ./ && node postbuild.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukeshgurusamy-dev/Moshify.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukeshgurusamy-dev/Moshify/issues"
+  },
+  "homepage": "https://github.com/mukeshgurusamy-dev/Moshify#readme",
   "devDependencies": {
-    "cssnano": "^7.1.0",
-    "parcel": "^2.15.4",
-    "postcss": "^8.5.6"
+    "parcel": "^2.15.4"
   }
 }
