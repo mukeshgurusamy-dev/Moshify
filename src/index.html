@@ -49,7 +49,7 @@
     <!--page header-->
     <header>
       <!--navigationbar-->
-      <nav class="nav collapsible">
+      <nav class="nav collapsible collapsible--expanded">
         <!--forlogo-->
         <a class="nav__brand" href="/"
           ><img src="./images/logo.svg" alt="Brand logo"
@@ -58,15 +58,9 @@
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="./images/sprite.svg#menu"></use>
         </svg>
-
-        <!--navigation-items-->
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">VPN</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
-        </ul>
       </nav>
+      <!--Adding navigation-bar list-items dynamically using JS,
+      due to minification problem caused by Pacrel defaulthtmloptimizer-->
     </header>
     <!--herocomponent-->
     <section class="block block--dark block--skewed-left hero">
@@ -91,6 +85,7 @@
         /></picture>
       </div>
     </section>
+
     <!--Domain-block-->
     <section class="block container block-domain" data-aos="fade-up">
       <header class="block__header">
@@ -532,7 +527,7 @@
       </div>
     </div>
     <!--logic of our website-->
-    <script src="./js/main.js" type="module"></script>
+    <script type="module" src="./js/main.js"></script>
     <!--for animation-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "dev": "parcel src/index.html --public-url ./",
     "build": "parcel build src/index.html --public-url ./ && node postbuild.js"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/mukeshgurusamy-dev/Moshify#readme",
   "devDependencies": {
+    "@parcel/optimizer-htmlnano": "^2.15.4",
     "parcel": "^2.15.4"
   }
 }
