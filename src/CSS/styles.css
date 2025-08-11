@@ -318,6 +318,7 @@ a {
 /*plans*/
 .plan {
   transition: transform 0.3s ease-out;
+  margin: 1.5rem; /* // adding some margins to plan for better viewing of card in mobiledevices*/
 }
 .plan__name {
   font-size: 2.4rem;
@@ -365,6 +366,10 @@ a {
   .plan--popular:hover {
     transform: scale(1.13);
   }
+  /* //->removing margin for tabletdevices becuse already we have many many spaces sins tablet are wider*/
+  .plan {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
@@ -378,6 +383,10 @@ a {
   }
   .plan__description {
     font-size: 1.7rem;
+  }
+  /*//->removing margins for plan*/
+  .plan {
+    margin: 0;
   }
 }
 /*Popularbadge*/
@@ -688,6 +697,14 @@ a {
 .nav__brand {
   transform: translateY(5px);
 }
+/* //->Adding border to navigation bar for mobile*/
+.nav {
+  border-bottom: 1px solid #222;
+}
+/* //->removing border for last item in navigation-bar when its expanded*/
+.nav.collapsible--expanded .nav__item:last-of-type {
+  border-bottom: 0;
+}
 @media screen and (min-width: 728px) {
   /*disabling navigation toggler for 768px and widerscreens*/
   .nav__toggler {
@@ -708,6 +725,9 @@ a {
   .nav__list.collapsible__content {
     max-height: 100%;
     opacity: 1;
+  }
+  .nav {
+    border: 0;
   }
 }
 /*HeroComponent*/
