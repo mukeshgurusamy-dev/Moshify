@@ -350,21 +350,22 @@ a {
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
+/* //-> slight change*/
 .plan:hover {
   transform: scale(1.07);
 }
 /* //->slight change*/
 .plan--popular:hover {
-  transform: scale(1.07); /*original value is 1.15*/
+  transform: scale(1.08); /*original value is 1.15*/
 }
 @media screen and (min-width: 768px) {
   /* //->slight change*/
   .plan--popular {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
   /*//->slight change*/
   .plan--popular:hover {
-    transform: scale(1.13);
+    transform: scale(1.1);
   }
   /* //->removing margin for tabletdevices becuse already we have many many spaces sins tablet are wider*/
   .plan {
@@ -401,7 +402,8 @@ a {
   width: 40px;
   position: absolute;
   top: -6px;
-  right: 5%;
+  right: 0;
+  transform: translateX(-20%);
 }
 /*Mediacomponent*/
 /*for Mediacomponent*/
