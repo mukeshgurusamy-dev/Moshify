@@ -38,8 +38,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!--to render samely across allbrowsers-->
-    <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <!--for AOS(animation on scroll) animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -51,7 +49,7 @@
       <!--navigationbar-->
       <nav class="nav collapsible">
         <!--forlogo-->
-        <a class="nav__brand" href="/"
+        <a class="nav__brand" href="/" aria-label="Moshify"
           ><img src="./images/logo.svg" alt="Brand logo"
         /></a>
         <!--for toggler-icon-->
@@ -100,6 +98,7 @@
           type="text"
           class="input"
           placeholder="Enter domain name here..."
+          aria-label="Domain"
         />
         <button class="btn btn--accent">
           <svg class="icon icon--white">

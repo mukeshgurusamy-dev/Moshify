@@ -9,6 +9,9 @@
 good on somedevices so layout breaks,even mosh made some loopholes intentionally or not,
 I dont know But we have to make some changes*/
 
+/*to render elements samely across allbrowsers*/
+@import "./normalize.css";
+
 /*Variables*/
 :root {
   --color-primary: #2584ff;
@@ -637,8 +640,6 @@ a {
 /*for blockheader*/
 .block__header {
   text-align: center;
-  /*max-width: 1140px;
-  margin: 0 auto;*/
   margin-bottom: 4rem;
 }
 
