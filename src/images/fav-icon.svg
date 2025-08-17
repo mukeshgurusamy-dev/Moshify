@@ -1,0 +1,33 @@
+<svg viewBox="16.0233403 5.79070465116279 49.114999999999995 40.81395348837209" xmlns="http://www.w3.org/2000/svg" style="max-height: 500px" width="49.114999999999995" height="40.81395348837209">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2584ff;
+        stroke: #2584ff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ff3400;
+        stroke: #ff3400;
+        mix-blend-mode: lighten;
+      }
+
+      .cls-3 {
+        font-size: 32.498px;
+        fill: #fff;
+        font-family: Inter;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path d="M43.851,29.7L24.244,39.2,32.037,14.02Z" class="cls-1" data-name="Polygon 1 copy 2" id="Polygon_1_copy_2"/>
+  <path d="M37.033,29.7L56.64,39.2,48.847,14.02Z" class="cls-2" data-name="Polygon 1 copy 2" id="Polygon_1_copy_2-2"/>
+  <text transform="translate(71.466 35.437) scale(0.923)" class="cls-3" id="Moshify">Moshify</text>
+</svg>
