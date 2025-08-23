@@ -760,6 +760,12 @@ a {
     align-self: center;
   }
 }
+@media screen and (min-width: 1024px) {
+  /*Utility-class: fix 1px seams(Anti-aliasing line) casued by clip-path/skew*/
+  .fix-seam {
+    margin-top: -1px;
+  }
+}
 /*domain-block*/
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
