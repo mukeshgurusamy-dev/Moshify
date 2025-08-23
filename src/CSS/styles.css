@@ -470,6 +470,7 @@ a {
 /*Grids*/
 .grid {
   display: grid;
+  margin: 1rem;
 }
 /*for tablet and wider screens*/
 @media screen and (min-width: 728px) {
@@ -491,10 +492,6 @@ a {
 }
 .nav__brand {
   transform: translateY(5px);
-}
-/*slightly change*/
-.grid {
-  margin: 1rem;
 }
 .testimonial__image > img {
   width: 100%;
