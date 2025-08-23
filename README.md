@@ -28,9 +28,11 @@ Deployed with **Netlify**.
 
 ## 🛠️ Tech Stack  
 - **HTML5**  
-- **CSS3 (Flexbox, Grid, Animations, Responsive Design)**  
-- **JavaScript**
-- **MediaQueries**  
+- **CSS3** (Flexbox, Grid, Animations, Responsive Design)  
+- **JavaScript (ES6+)**  
+- **Responsive Design with Media Queries**  
+- **Parcel (Bundler)**
+
 
 ---
 
