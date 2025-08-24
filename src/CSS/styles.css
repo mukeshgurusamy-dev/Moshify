@@ -321,7 +321,7 @@ a {
 /*plans*/
 .plan {
   transition: transform 0.3s ease-out;
-  margin: 1.5rem; /* // adding some margins to plan for better viewing of card in mobiledevices*/
+  margin: 1rem; /* // adding some margins to plan for better viewing of card in mobiledevices*/
 }
 .plan__name {
   font-size: 2.4rem;
@@ -347,6 +347,7 @@ a {
 /* //->slight change*/
 .plan--popular {
   transform: scale(1.04); /*original value is 1.1*/ /*10% larger*/
+  max-width: 100%;
 }
 /*for plancomponent listitems*/
 .plan .list__item {
