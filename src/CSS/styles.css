@@ -356,20 +356,16 @@ a {
 }
 /* //-> slight change*/
 .plan:hover {
-  transform: scale(1.07);
+  transform: scale(1.06);
 }
 /* //->slight change*/
 .plan--popular:hover {
   transform: scale(1.08); /*original value is 1.15*/
 }
 @media screen and (min-width: 768px) {
-  /* //->slight change*/
-  .plan--popular {
-    transform: scale(1.06);
-  }
   /*//->slight change*/
   .plan--popular:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
   }
   /* //->removing margin for tabletdevices becuse already we have many many spaces sins tablet are wider*/
   .plan {
@@ -392,6 +388,12 @@ a {
   /*//->removing margins for plan*/
   .plan {
     margin: 0;
+  }
+  .plan--popular {
+    transform: scale(1.07);
+  }
+  .plan--popular:hover {
+    transform: scale(1.1);
   }
 }
 /*for mobile devices with lower screen sizes between 300 to 400px*/
@@ -779,7 +781,7 @@ a {
     align-self: center;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 724px) {
   /*Utility-class: fix 1px seams(Anti-aliasing line) casued by clip-path/skew*/
   .fix-seam {
     margin-top: -1px;
