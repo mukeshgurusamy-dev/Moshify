@@ -394,6 +394,28 @@ a {
     margin: 0;
   }
 }
+/*for mobile devices with lower screen sizes between 300 to 400px*/
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .badge--small {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .plan__billing-cycle {
+    margin-right: 0.7rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+}
+/*for badge inside a card to create space between plan-billing-cycle for wider screens*/
+@media screen and (min-width: 724px) {
+  .card__header {
+    padding-right: 7%;
+  }
+  .plan .plan__billing-cycle {
+    margin-right: 1.5rem;
+  }
+}
 /*Popularbadge*/
 /*header(parent) should be relative because popular-badge(child) is absolutely positioned*/
 .plan--popular .card__header {
