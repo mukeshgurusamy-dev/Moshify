@@ -529,6 +529,9 @@ a {
   top: 3rem;
   right: -32px;
 }
+.testimonial .grid {
+  margin: 1.5rem;
+}
 @media screen and (min-width: 728px) {
   .testimonial .quote,
   .testimonial .quote__title {
@@ -539,9 +542,18 @@ a {
   }
 }
 /*slight change*/
+/*for lower screen-size mobile devices*/
+@media screen and (min-width: 300px) and (max-width: 359px) {
+  .testimonial .grid {
+    margin: 0;
+  }
+  .testimonial__image {
+    margin-right: 5rem;
+  }
+}
 @media screen and (min-width: 360px) and (max-width: 390px) {
   .testimonial__image {
-    margin-right: 6rem;
+    margin-right: 6.5rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 430px) {
