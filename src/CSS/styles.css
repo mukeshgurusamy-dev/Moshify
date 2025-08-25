@@ -541,7 +541,7 @@ a {
 /*slight change*/
 @media screen and (min-width: 360px) and (max-width: 390px) {
   .testimonial__image {
-    margin-right: 6.5rem;
+    margin-right: 6rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 430px) {
